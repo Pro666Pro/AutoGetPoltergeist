@@ -3,9 +3,7 @@ local teleportFunc = queueonteleport or queue_on_teleport
         teleportFunc([[
             if not game:IsLoaded() then
                 game.Loaded:Wait()
-            end
-
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Loading",Text = "Script Loading :-0",Icon = "rbxassetid://7733658504",Duration = 
+	end
 
 local GameName = "AutoGetPoltergeist - by nexer"
 

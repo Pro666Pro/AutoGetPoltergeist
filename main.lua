@@ -52,7 +52,9 @@ local args = {
 
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(unpack(args))
 
-
+if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 868768988664040) then
+game:GetService("TeleportService"):Teleport(6403373529)
+end
 
 until aura == false
 end

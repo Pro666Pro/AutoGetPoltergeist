@@ -35,8 +35,11 @@ task.wait(0.15)
 end
 	end    
 })
+end
+
 		
 else
+
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Not Found",Text = "Not Found" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "alright dud"})
 wait(0.5)
 serverhop = true
@@ -51,7 +54,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/m
 wait(3)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/main/main.lua'))()
 wait(3)
-end
 end
 ]])  
 end

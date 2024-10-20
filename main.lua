@@ -5,10 +5,6 @@ local teleportFunc = queueonteleport or queue_on_teleport
                 game.Loaded:Wait()
 	end
 
-for i,v in pairs(workspace.Enemies:GetChildren()) do
-if v:FindFirstChild("HumanoidRootPart") then
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Found",Text = "Server Found" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "alright dud"})
-
 local GameName = "AutoGetPoltergeist - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -35,26 +31,26 @@ task.wait(0.15)
 end
 	end    
 })
-end
 
-		
-else
-
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Not Found",Text = "Not Found" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "alright dud"})
-wait(0.5)
-serverhop = true
-wait(0.5)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/main/main.lua'))()
-wait(3)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/main/main.lua'))()
-wait(3)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/main/main.lua'))()
-wait(3)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/main/main.lua'))()
-wait(3)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/serverhop/main/main.lua'))()
-wait(3)
-end
 ]])  
 end
-game:GetService("TeleportService"):Teleport(103505724406848)
+fireclickdetector(workspace.Lobby["Ghost"].ClickDetector)
+
+wait(0.5)
+
+game.ReplicatedStorage.Ghostinvisibilityactivated:FireServer()
+
+wait(0.5)
+
+if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+repeat task.wait()
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport2.TouchInterest.Parent, 0)
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport2.TouchInterest.Parent, 1)
+until game.Players.LocalPlayer.Character:FindFirstChild("entered")
+end
+
+wait(2)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(431.7814025878906, 400, 7.466009616851807)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true

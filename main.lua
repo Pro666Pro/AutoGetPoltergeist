@@ -5,6 +5,10 @@ local teleportFunc = queueonteleport or queue_on_teleport
                 game.Loaded:Wait()
 	end
 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,50,0)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+		
 local GameName = "AutoGetPoltergeist - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()

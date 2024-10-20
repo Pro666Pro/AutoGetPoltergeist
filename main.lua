@@ -24,20 +24,21 @@ Tab:AddToggle({
 	Name = "Auto Get Poltergeist",
 	Default = true,
 	Callback = function(Value)
-		_G.AutoSlapAll = Value
-while _G.AutoSlapAll do
+_G.Aura = Value
+while _G.Aura do
 for i,v in pairs(workspace.Enemies:GetChildren()) do
 if v:FindFirstChild("HumanoidRootPart") then
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
 end
 end
-task.wait(0.15)
+task.wait(0.17)
 end
 	end    
 })
 
 ]])  
 end
+
 fireclickdetector(workspace.Lobby["Ghost"].ClickDetector)
 
 wait(0.5)

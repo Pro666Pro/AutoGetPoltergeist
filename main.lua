@@ -1,4 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Nah, I Do Auto Get Poltergeist" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Upgraded",Text = "Fast Version" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+
 
 local teleportFunc = queueonteleport or queue_on_teleport
     if teleportFunc then
@@ -30,10 +32,13 @@ _G.Aura = Value
 while _G.Aura do
 for i,v in pairs(workspace.Enemies:GetChildren()) do
 if v:FindFirstChild("HumanoidRootPart") then
+for i = 1, 25 do
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
-end
-end
 task.wait(0.001)
+end 
+end
+end
+task.wait(10)
 end
 	end    
 })

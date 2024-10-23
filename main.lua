@@ -34,7 +34,6 @@ while _G.Aura do
 for i,v in pairs(workspace.Enemies:GetChildren()) do
 if v:FindFirstChild("HumanoidRootPart") then
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
-end 
 end
 end
 task.wait(1)

@@ -1,7 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Nah, I Do Auto Get Poltergeist" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Upgraded",Text = "Fast Version Lol" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Upgraded",Text = "Fast Version Lol" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Upgraded",Text = "Fast Version Lol" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 
 local teleportFunc = queueonteleport or queue_on_teleport
     if teleportFunc then

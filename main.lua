@@ -1,3 +1,5 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Nah, I Do Auto Get Poltergeist" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+
 local teleportFunc = queueonteleport or queue_on_teleport
     if teleportFunc then
         teleportFunc([[
@@ -31,7 +33,7 @@ if v:FindFirstChild("HumanoidRootPart") then
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
 end
 end
-task.wait(0.01)
+task.wait(0.001)
 end
 	end    
 })

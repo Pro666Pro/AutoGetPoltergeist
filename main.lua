@@ -1,5 +1,4 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Nah, I Do Auto Get Poltergeist" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Upgraded lol",Text = "Fast Version Hehe" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 
 local teleportFunc = queueonteleport or queue_on_teleport
     if teleportFunc then
@@ -11,8 +10,6 @@ local teleportFunc = queueonteleport or queue_on_teleport
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,50,0)
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.Angles(0, math.rad(180), 0)
 		
 local GameName = "AutoGetPoltergeist - by nexer"
 
@@ -36,7 +33,7 @@ if v:FindFirstChild("HumanoidRootPart") then
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
 end
 end
-task.wait(1)
+task.wait(0.0001)
 end
 	end    
 })
